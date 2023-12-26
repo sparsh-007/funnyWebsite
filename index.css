@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #E0F7FA; /* Light blue background */
+}
+
+.container {
+    margin-top: 50px;
+    color: #0277BD; /* Darker blue for text */
+}
+
+.cute-button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #4FC3F7; /* Sky blue for buttons */
+    color: white;
+    box-shadow: 0 4px #29B6F6; /* Button shadow */
+    transition: transform 0.3s ease;
+}
+
+.cute-button:hover {
+    transform: scale(1.1); /* Button grows when hovered */
+}
+
+.cute-button:active {
+    box-shadow: 0 2px #01579B;
+    transform: translateY(2px); /* Button presses down when clicked */
+}
+
+#noButton:hover {
+    /* This will make the button move randomly within a limited range */
+    transform: translate(calc(-50px + 100px * random()), calc(-50px + 100px * random()));
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
