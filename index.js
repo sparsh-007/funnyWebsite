@@ -6,7 +6,7 @@ let noButtonHoverCount = 0;
 
 document.getElementById('noButton').addEventListener('mouseover', function() {
     noButtonHoverCount++;
-    const maxMovement = 200;
+    const maxMovement = 575;
     const windowHeight = window.innerHeight - this.offsetHeight;
     const windowWidth = window.innerWidth - this.offsetWidth;
 
